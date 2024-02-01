@@ -63,6 +63,10 @@ p {
   padding: 16px;
 }
 
+.tooltip i {
+  font-size: 22px;
+}
+
 .tooltip .tooltiptext {
   visibility: hidden;
   background-color: black;
