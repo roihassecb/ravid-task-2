@@ -60,8 +60,7 @@ p {
 
 .tooltip {
   position: relative;
-  display: inline-block;
-  border-bottom: px dotted black;
+  padding: 16px;
 }
 
 .tooltip .tooltiptext {
