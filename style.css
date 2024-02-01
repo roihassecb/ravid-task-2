@@ -1,14 +1,7 @@
-html,body {
+html,
+body {
   margin: 0;
   padding: 0;
-  /* height: 100%; */
-}
-nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  background-color: #272d2f;
-  width: 100%;
 }
 
 body {
@@ -21,12 +14,24 @@ header {
   top: 0;
 }
 
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #272d2f;
+  width: 100%;
+}
+
 h1 {
   color: #fff;
   font-size: 80px;
   position: relative;
   text-align: center;
   top: 100px;
+}
+
+h2 {
+  color: #fff;
 }
 
 h3 {
@@ -41,10 +46,6 @@ p {
   color: #fff;
 }
 
-h2 {
-  color: #fff;
-}
-
 .tooltip {
   position: relative;
   display: inline-block;
@@ -53,7 +54,6 @@ h2 {
 
 .tooltip .tooltiptext {
   visibility: hidden;
-  /* width: 80px; */
   background-color: black;
   color: #fff;
   text-align: center;
@@ -62,7 +62,6 @@ h2 {
   top: 100%;
   left: 50%;
   margin-left: 20px;
-
   position: absolute;
   z-index: 1;
 }
@@ -104,7 +103,6 @@ h2 {
   width: 100%;
 }
 
-
 .profileimg {
   width: 250px;
   height: 300px;
@@ -128,7 +126,6 @@ h2 {
   width: 100%;
   left: 20px;
   margin-top: 20px;
-
 }
 
 .profile-title {
@@ -136,7 +133,6 @@ h2 {
   white-space: pre-line;
   font-size: 50px;
 }
-
 
 .nalla {
   width: 250px;
@@ -157,6 +153,7 @@ h2 {
   background-color: #2a3639;
   width: 100%;
 }
+
 .about-nella {
   margin-top: 20px;
   line-height: 1.5;
@@ -180,16 +177,18 @@ video {
   margin: 10px;
 }
 
-.project-txt{
+.project-txt {
   font-size: larger;
   margin: 50px;
 }
+
 .project-img {
   width: 200px;
   height: 200px;
   object-fit: cover;
-border: #18414b;
+  border: #18414b;
 }
+
 .card-project {
   display: flex;
   flex-direction: column;
@@ -199,46 +198,52 @@ border: #18414b;
   font-variant-position: sub;
   font-size: small;
 }
+
 .card-container {
   display: flex;
   flex-direction: row;
   font-size: 20px;
 }
-.first-Resume{
-  margin: 30px;
-  font-size: 20px;
-  background-color: #7F7F7F;
-}
-.bar-Manager{
-  margin: 30px;
-  font-size: 20px;
-  background-color: #7F7F7F;
-}
-.Project-Manager{
-  margin: 30px;
-  font-size: 20px;
-  background-color: #7F7F7F;
-}
-.Military-Service{
-  margin: 30px;
-  font-size: 20px;
-  background-color: #7F7F7F;
-}
-.contact-me{
-color: #fff;
-margin-left: 200px ;
 
+.first-Resume {
+  margin: 30px;
+  font-size: 20px;
+  background-color: #7f7f7f;
 }
 
+.bar-Manager {
+  margin: 30px;
+  font-size: 20px;
+  background-color: #7f7f7f;
+}
+
+.Project-Manager {
+  margin: 30px;
+  font-size: 20px;
+  background-color: #7f7f7f;
+}
+
+.Military-Service {
+  margin: 30px;
+  font-size: 20px;
+  background-color: #7f7f7f;
+}
+
+.contact-me {
+  color: #fff;
+  margin-left: 200px;
+}
 
 @media only screen and (max-width: 700px) {
   body {
     background-color: rgb(126, 161, 200);
   }
+
   header {
     position: sticky;
     top: 0;
   }
+
   nav {
     display: flex;
     align-items: center;
@@ -246,6 +251,7 @@ margin-left: 200px ;
     gap: 3px;
     size: 1px;
   }
+
   .nav-icon {
     max-width: 100%;
     height: auto;
@@ -257,6 +263,7 @@ margin-left: 200px ;
     font-size: 40px;
     position: relative;
   }
+
   .profile-container {
     display: flex;
     align-items: center;
@@ -265,11 +272,13 @@ margin-left: 200px ;
     margin-top: 146px;
     justify-content: center;
   }
+
   .profile-title {
     font-family: "Courier New", monospace;
     white-space: pre-line;
     font-size: 20px;
   }
+
   .profileimg {
     width: 100px;
     height: 120px;
@@ -302,6 +311,7 @@ margin-left: 200px ;
     border-radius: 20%;
     margin-top: 20px;
   }
+
   .nalla-container {
     display: flex;
     align-items: center;
@@ -313,35 +323,39 @@ margin-left: 200px ;
     background-color: #2a3639;
     width: 100%;
   }
-  .project-txt{
-  font-size: 15px;
-  margin: 0;
- }
- .project-txt h2{
-  font-size: 20px;
-  margin: 0;
- }
- .project-img {
-  width: 80px;
-  height: 80px;
-  object-fit: cover;
- border: #18414b;
- }
- .card-project {
-  display: flex;
-  flex-direction: column;
-  width: 80px;
-  height: 100px;
-  margin: 50px;
-  font-variant-position: sub;
-  font-size: small;
-  
- }
- .card-container {
-  display: flex;
-  flex-direction: column;
-  font-size: 8px;
-  justify-content: center;
-  margin: 50px;
- }
+
+  .project-txt {
+    font-size: 15px;
+    margin: 0;
+  }
+
+  .project-txt h2 {
+    font-size: 20px;
+    margin: 0;
+  }
+
+  .project-img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border: #18414b;
+  }
+
+  .card-project {
+    display: flex;
+    flex-direction: column;
+    width: 80px;
+    height: 100px;
+    margin: 50px;
+    font-variant-position: sub;
+    font-size: small;
+  }
+
+  .card-container {
+    display: flex;
+    flex-direction: column;
+    font-size: 8px;
+    justify-content: center;
+    margin: 50px;
+  }
 }
