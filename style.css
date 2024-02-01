@@ -130,8 +130,9 @@ footer {
   gap: 80px;
   justify-content: center;
   align-items: center;
-  min-height: 80px;
+  min-height: 110px;
   margin-top: auto;
+  padding-top: 30px;
 }
 
 .profile-title {
