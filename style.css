@@ -127,7 +127,7 @@ p {
   color: #f1feed;
 }
 
-.contact-info {
+footer {
   display: flex;
   gap: 80px;
   justify-content: center;
