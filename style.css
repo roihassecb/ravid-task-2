@@ -22,7 +22,7 @@ body {
 }
 
 header {
-  position: sticky; 
+  position: sticky;
   position: fixed;
   top: 0;
   width: 100%;
@@ -131,11 +131,11 @@ footer {
   animation-iteration-count: 1;
 }
 @keyframes fade {
-  0%{
+  0% {
     opacity: 0;
   }
-  100%{
-   opacity: 1;
+  100% {
+    opacity: 1;
   }
 }
 
@@ -259,13 +259,6 @@ video {
     justify-content: center;
     gap: 8px;
     size: 1px;
-  }
-
-  .nav-icon {
-    max-width: 100%;
-    height: auto;
-    margin-left: 20px;
-    background-color: #272d2f;
   }
 
   h1 {
