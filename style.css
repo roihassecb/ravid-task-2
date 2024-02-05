@@ -121,7 +121,7 @@ footer {
   background-color: #2a3639;
 }
 
-.profileimg {
+.profile-img {
   width: 300px;
   height: 350px;
   border-radius: 50%;
@@ -283,7 +283,7 @@ video {
     font-size: 20px;
   }
 
-  .profileimg {
+  .profile-img {
     width: 100px;
     height: 120px;
     border-radius: 50%;
