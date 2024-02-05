@@ -7,7 +7,6 @@ html {
   margin: 0;
   padding: 0;
 }
-
 html,
 body {
   margin: 0;
@@ -23,6 +22,7 @@ body {
 }
 
 header {
+  position: sticky; 
   position: fixed;
   top: 0;
   width: 100%;
@@ -60,6 +60,15 @@ p {
   color: #fff;
 }
 
+footer {
+  display: flex;
+  gap: 80px;
+  justify-content: center;
+  align-items: center;
+  min-height: 70px;
+  margin-top: auto;
+  padding-top: 30px;
+}
 .tooltip {
   position: relative;
   padding: 16px;
@@ -113,11 +122,21 @@ p {
 }
 
 .profileimg {
-  width: 250px;
-  height: 300px;
+  width: 300px;
+  height: 350px;
   border-radius: 50%;
   object-fit: cover;
   margin-left: 20px;
+  animation: fade ease 5s;
+  animation-iteration-count: 1;
+}
+@keyframes fade {
+  0%{
+    opacity: 0;
+  }
+  100%{
+   opacity: 1;
+  }
 }
 
 .profile-txt {
@@ -125,16 +144,7 @@ p {
   margin-left: 80px;
   font-size: 25px;
   color: #f1feed;
-}
-
-footer {
-  display: flex;
-  gap: 80px;
-  justify-content: center;
-  align-items: center;
-  min-height: 110px;
-  margin-top: auto;
-  padding-top: 30px;
+  margin-top: 100px;
 }
 
 .profile-title {
@@ -189,13 +199,16 @@ video {
 .project-txt {
   font-size: larger;
   margin: 50px;
+  margin-top: 100px;
+  margin-left: 135px;
+  /* text-shadow: #18414b; */
 }
 
 .project-img {
   width: 200px;
   height: 200px;
   object-fit: cover;
-  border: #18414b;
+  /* border: #18414b; */
 }
 
 .card-project {
@@ -206,46 +219,33 @@ video {
   margin: 20px;
   font-variant-position: sub;
   font-size: small;
+  /* border: #18414b;
+  box-shadow: #18414b; */
 }
 
 .card-container {
   display: flex;
   flex-direction: row;
   font-size: 20px;
+  margin-left: 120px;
 }
 
-.first-Resume {
-  margin: 30px;
+.Resume {
   font-size: 20px;
   background-color: #7f7f7f;
-}
-
-.bar-Manager {
-  margin: 30px;
-  font-size: 20px;
-  background-color: #7f7f7f;
-}
-
-.Project-Manager {
-  margin: 30px;
-  font-size: 20px;
-  background-color: #7f7f7f;
-}
-
-.Military-Service {
-  margin: 30px;
-  font-size: 20px;
-  background-color: #7f7f7f;
+  padding: 15px;
+  color: #fff;
+  margin-top: 60px;
 }
 
 .contact-me {
   color: #fff;
-  margin-left: 200px;
+  margin-left: 500px;
 }
 
 @media only screen and (max-width: 700px) {
   body {
-    background-color: rgb(126, 161, 200);
+    background-color: rgb(74, 88, 103);
   }
 
   header {
@@ -257,8 +257,15 @@ video {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 3px;
+    gap: 8px;
     size: 1px;
+  }
+
+  .nav-icon {
+    max-width: 100%;
+    height: auto;
+    margin-left: 20px;
+    background-color: #272d2f;
   }
 
   h1 {
@@ -269,10 +276,12 @@ video {
   .profile-container {
     display: flex;
     align-items: center;
-    gap: 40px;
-    margin-right: 200px;
-    margin-top: 146px;
+    gap: 120px;
+    padding: 40px 0;
+    margin-top: 30px;
     justify-content: center;
+    background-color: #2a3639;
+    padding-right: 200px;
   }
 
   .profile-title {
@@ -294,31 +303,32 @@ video {
   }
 
   .profile-txt {
-    flex: 1;
-    margin-left: 80px;
+    flex: 1px;
+    margin-left: 20px;
+
     font-size: 10px;
     color: #ffffff;
   }
 
   .nalla {
-    width: 80px;
-    max-height: 100px;
+    width: 150px;
+    max-height: 150px;
     border-radius: 30%;
     object-fit: cover;
-    margin: 50px;
+    margin: 10px;
   }
 
   video {
-    width: 70px;
+    width: 100px;
     border-radius: 20%;
-    margin-top: 20px;
+    margin-top: 30px;
   }
 
   .nalla-container {
     display: flex;
     align-items: center;
-    gap: 20px;
-    padding: 6px;
+    gap: 10px;
+    padding: 8px;
     margin-top: 146px;
     justify-content: center;
     font-size: 10px;
@@ -327,12 +337,12 @@ video {
   }
 
   .project-txt {
-    font-size: 15px;
-    margin: 0;
+    font-size: 10px;
+    margin: 30px;
   }
 
   .project-txt h2 {
-    font-size: 20px;
+    font-size: 15px;
     margin: 0;
   }
 
@@ -348,7 +358,7 @@ video {
     flex-direction: column;
     width: 80px;
     height: 100px;
-    margin: 50px;
+    margin: 90px;
     font-variant-position: sub;
     font-size: small;
   }
@@ -359,5 +369,36 @@ video {
     font-size: 8px;
     justify-content: center;
     margin: 50px;
+  }
+
+  .Resume {
+    font-size: 10px;
+    background-color: #7f7f7f;
+    padding: 10px;
+    color: #fff;
+    margin-top: 40px;
+  }
+
+  .contact-me {
+    color: #fff;
+    margin-left: 130px;
+    font-size: 15px;
+    margin-top: 18px;
+  }
+
+  .cvimg {
+    width: 30px;
+    height: auto;
+    margin-left: 10px;
+  }
+
+  footer {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    min-height: 70px;
+    margin-top: auto;
+    padding-top: 30px;
   }
 }
