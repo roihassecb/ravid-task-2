@@ -61,13 +61,14 @@ p {
 
 footer {
   display: flex;
-  gap: 80px;
-  justify-content: center;
   align-items: center;
-  min-height: 70px;
+  justify-content: center;
+  gap: 80px;
   margin-top: auto;
   padding-top: 30px;
+  padding-bottom: 15px;
 }
+
 .tooltip {
   position: relative;
   padding: 16px;
@@ -105,7 +106,7 @@ footer {
 
 .icon-global {
   color: #fff;
-  font-size: 50px;
+  font-size: 28px;
 }
 
 .contact-icon {
