@@ -41,7 +41,7 @@ h1 {
   color: #fff;
   font-size: 72px;
   text-align: center;
-  margin-top: 136px;
+  margin-top: 80px;
 }
 
 h2 {
@@ -97,8 +97,8 @@ footer {
 }
 
 .container {
-  display: flex;
-  align-items: center;
+  position: relative;
+  top: 60px;
 }
 
 .icon-global {
