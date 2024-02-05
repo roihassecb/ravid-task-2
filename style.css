@@ -203,14 +203,12 @@ video {
   margin: 50px;
   margin-top: 100px;
   margin-left: 135px;
-  /* text-shadow: #18414b; */
 }
 
 .project-img {
   width: 200px;
   height: 200px;
   object-fit: cover;
-  /* border: #18414b; */
 }
 
 .card-project {
@@ -221,8 +219,6 @@ video {
   margin: 20px;
   font-variant-position: sub;
   font-size: small;
-  /* border: #18414b;
-  box-shadow: #18414b; */
 }
 
 .card-container {
@@ -246,70 +242,34 @@ video {
 }
 
 @media only screen and (max-width: 700px) {
-  body {
-    background-color: rgb(74, 88, 103);
-  }
-
-  header {
-    position: sticky;
-    top: 0;
-  }
-
-  nav {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-    size: 1px;
-  }
-
   h1 {
-    font-size: 40px;
-    position: relative;
+    font-size: 36px;
   }
 
   .profile-container {
-    display: flex;
-    align-items: center;
-    gap: 120px;
-    padding: 40px 0;
-    margin-top: 30px;
-    justify-content: center;
-    background-color: #2a3639;
-    padding-right: 200px;
+    gap: 44px;
   }
 
   .profile-title {
-    font-family: "Courier New", monospace;
-    white-space: pre-line;
     font-size: 20px;
-  }
-
-  .profile-img {
-    width: 100px;
-    height: 120px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-left: 200px;
   }
 
   .icon-global {
     font-size: 20px;
   }
 
-  .profile-txt {
-    flex: 1px;
-    margin-left: 20px;
+  .profile-img {
+    max-width: 150px;
+  }
 
+  .profile-txt {
+    margin-left: 20px;
     font-size: 10px;
-    color: #ffffff;
   }
 
   .nalla {
     width: 150px;
     max-height: 150px;
-    border-radius: 30%;
-    object-fit: cover;
     margin: 10px;
   }
 
@@ -320,15 +280,9 @@ video {
   }
 
   .nalla-container {
-    display: flex;
-    align-items: center;
     gap: 10px;
     padding: 8px;
-    margin-top: 146px;
-    justify-content: center;
     font-size: 10px;
-    background-color: #2a3639;
-    width: 100%;
   }
 
   .project-txt {
@@ -344,22 +298,16 @@ video {
   .project-img {
     width: 80px;
     height: 80px;
-    object-fit: cover;
     border: #18414b;
   }
 
   .card-project {
-    display: flex;
-    flex-direction: column;
     width: 80px;
     height: 100px;
     margin: 90px;
-    font-variant-position: sub;
-    font-size: small;
   }
 
   .card-container {
-    display: flex;
     flex-direction: column;
     font-size: 8px;
     justify-content: center;
@@ -368,14 +316,11 @@ video {
 
   .Resume {
     font-size: 10px;
-    background-color: #7f7f7f;
     padding: 10px;
-    color: #fff;
     margin-top: 40px;
   }
 
   .contact-me {
-    color: #fff;
     margin-left: 130px;
     font-size: 15px;
     margin-top: 18px;
@@ -383,17 +328,9 @@ video {
 
   .cvimg {
     width: 30px;
-    height: auto;
-    margin-left: 10px;
   }
 
   footer {
-    display: flex;
     gap: 40px;
-    justify-content: center;
-    align-items: center;
-    min-height: 70px;
-    margin-top: auto;
-    padding-top: 30px;
   }
 }
