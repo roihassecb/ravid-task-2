@@ -4,8 +4,8 @@
 This projrct display my portfolio and my projects over the time
 
 I used in my project a new CSS propertis:
-- **calc()** function to calulate the heigth of the main container with the heigthof the fixed navigation bar 
-- **Transform: translate(-50%, -50%)** to make the titles of the navigation icons in the center of the icons 
+- **calc()** function to calulate the heigth of the main container with the heigth of the fixed navigation bar 
+- **transform: translate(-50%, -50%)** to make the titles of the navigation icons in the center of the icons 
 - **media-query** to support small screens and responsive design
 - **box-shadow** to add some style to my project cards
 - **flex-wrap** to make flex items brake row if no enough space in one line 
