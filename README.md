@@ -8,7 +8,7 @@ I used in my project a new CSS propertis:
 - **transform: translate(-50%, -50%)** to make the titles of the navigation icons in the center of the icons 
 - **media-query** to support small screens and responsive design
 - **box-shadow** to add some style to my project cards
-- **flex-wrap** to make flex items brake row if no enough space in one line 
+- **flex-wrap** to make flex items break row if no enough space in one line 
 ___
 ### External JS library
 I've also used for the first time in an external JS library of icons that called font-aswesome that provide an icons to use 
