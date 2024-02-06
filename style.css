@@ -57,6 +57,7 @@ div {
 
 p {
   color: #fff;
+  padding: 15px;
 }
 
 footer {
@@ -169,14 +170,13 @@ button {
   max-height: 350px;
   border-radius: 30%;
   object-fit: cover;
-  margin: 50px;
 }
 
 .nalla-container {
   display: flex;
   align-items: center;
   gap: 20px;
-  padding: 6px;
+  padding: 10px 30px;
   margin-top: 146px;
   justify-content: center;
   font-size: 25px;
@@ -198,13 +198,13 @@ button {
 .video-container {
   max-width: 200px;
   width: 100%;
-  margin: 30px;
+  display: flex;
+  justify-content: center;
 }
 
 video {
   width: 100%;
   border-radius: 10px;
-  margin: 10px;
 }
 
 .project-txt {
@@ -300,16 +300,11 @@ video {
     margin: 10px;
   }
 
-  video {
-    width: 100px;
-    border-radius: 20%;
-    margin-top: 30px;
-  }
-
   .nalla-container {
     gap: 10px;
     padding: 8px;
     font-size: 10px;
+    flex-direction: column;
   }
 
   .project-txt {
