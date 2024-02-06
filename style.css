@@ -207,15 +207,15 @@ video {
 
 .project-txt {
   font-size: larger;
-  margin: 50px;
-  margin-top: 100px;
-  margin-left: 135px;
+  margin-top: 40px;
+  padding: 0 30px;
 }
 
 .project-img {
-  width: 200px;
-  height: 200px;
+  width: 100%;
+  height: auto;
   object-fit: cover;
+  border-radius: 12px;
 }
 
 .card-project {
@@ -226,13 +226,18 @@ video {
   margin: 20px;
   font-variant-position: sub;
   font-size: small;
+  box-shadow: 0 0 4px 4px #7066666e;
+  border-radius: 12px;
 }
 
 .card-container {
   display: flex;
-  flex-direction: row;
   font-size: 20px;
-  margin-left: 120px;
+  padding: 0 20px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .Resume {
@@ -312,18 +317,6 @@ video {
   .project-txt h2 {
     font-size: 15px;
     margin: 0;
-  }
-
-  .project-img {
-    width: 80px;
-    height: 80px;
-    border: #18414b;
-  }
-
-  .card-project {
-    width: 80px;
-    height: 100px;
-    margin: 90px;
   }
 
   .card-container {
