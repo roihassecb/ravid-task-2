@@ -152,11 +152,9 @@ button {
 }
 
 .profile-txt {
-  flex: 1;
-  margin-left: 80px;
   font-size: 25px;
+  margin-top: 30px;
   color: #f1feed;
-  margin-top: 100px;
 }
 
 .profile-title {
@@ -177,7 +175,7 @@ button {
   align-items: center;
   gap: 20px;
   padding: 10px 30px;
-  margin-top: 146px;
+  margin-top: 30px;
   justify-content: center;
   font-size: 25px;
   background-color: #2a3639;
@@ -290,7 +288,6 @@ video {
   }
 
   .profile-txt {
-    margin-left: 20px;
     font-size: 10px;
   }
 
