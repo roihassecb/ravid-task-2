@@ -257,6 +257,10 @@ video {
     height: auto;
   }
 
+  .tooltiptext {
+    display: none;
+  }
+
   .hide {
     display: none;
   }
