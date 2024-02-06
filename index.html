@@ -9,10 +9,26 @@
       src="https://kit.fontawesome.com/cd301768c2.js"
       crossorigin="anonymous"
     ></script>
+    <script>
+      const showHideNavToggle = function () {
+        const navItems = document.getElementsByClassName("tooltip");
+        for (let i = 0; i < navItems.length; i++) {
+          const navItem = navItems[i];
+          if (navItem.className === "tooltip") {
+            navItem.className += " hide";
+          } else {
+            navItem.className = "tooltip";
+          }
+        }
+      };
+    </script>
   </head>
   <body>
     <header>
       <nav>
+        <button class="hamburger" onclick="showHideNavToggle()">
+          <i class="fa-solid fa-bars"></i>
+        </button>
         <a class="tooltip">
           <i class="fa-solid fa-house" style="color: #eca64c"></i>
           <span class="tooltiptext">Home</span>

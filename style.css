@@ -69,12 +69,14 @@ footer {
   padding-bottom: 15px;
 }
 
-.tooltip {
+.tooltip,
+.hamburger {
   position: relative;
   padding: 16px;
 }
 
-.tooltip i {
+.tooltip i,
+.hamburger {
   font-size: 22px;
 }
 
@@ -94,6 +96,13 @@ footer {
 
 .tooltip:hover .tooltiptext {
   visibility: visible;
+}
+
+button {
+  display: none;
+  background: none;
+  border: none;
+  color: #fff;
 }
 
 .container {
@@ -242,6 +251,20 @@ video {
 }
 
 @media only screen and (max-width: 700px) {
+  nav {
+    align-items: flex-start;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  button {
+    display: block;
+  }
+
   h1 {
     font-size: 36px;
   }
