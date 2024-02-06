@@ -9,32 +9,40 @@
       src="https://kit.fontawesome.com/cd301768c2.js"
       crossorigin="anonymous"
     ></script>
+    <script>
+      const showHideNavToggle = function () {
+        const navItems = document.getElementsByClassName("tooltip");
+        for (let i = 0; i < navItems.length; i++) {
+          const navItem = navItems[i];
+          if (navItem.className === "tooltip") {
+            navItem.className += " hide";
+          } else {
+            navItem.className = "tooltip";
+          }
+        }
+      };
+    </script>
   </head>
   <body>
     <header>
       <nav>
-        <a class="tooltip" href="/index.html">
-          <object data="home-icon" type="image/svg+xml">
-            <i class="fa-solid fa-house" style="color: #ffffff"></i>
-          </object>
+        <button class="hamburger" onclick="showHideNavToggle()">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <a class="tooltip hide" href="/index.html">
+          <i class="fa-solid fa-house" style="color: #ffffff"></i>
           <span class="tooltiptext">Home</span>
         </a>
-        <a class="tooltip" href="/About.html">
-          <object data="skills-icon" type="image/svg+xml">
-            <i class="fa-solid fa-circle-info" style="color: #ffffff"></i>
-          </object>
+        <a class="tooltip hide" href="/About.html">
+          <i class="fa-solid fa-circle-info" style="color: #ffffff"></i>
           <span class="tooltiptext">About</span>
         </a>
-        <a class="tooltip" href="/projects.html">
-          <object data="projects-icon" type="image/svg+xml">
-            <i class="fa-brands fa-r-project" style="color: #ffffff"></i>
-          </object>
+        <a class="tooltip hide" href="/projects.html">
+          <i class="fa-brands fa-r-project" style="color: #ffffff"></i>
           <span class="tooltiptext">Projects</span>
         </a>
-        <a class="tooltip">
-          <object data="Resume-icon" type="image/svg+xml">
-            <i class="fa-solid fa-file" style="color: #eca64c"></i>
-          </object>
+        <a class="tooltip hide">
+          <i class="fa-solid fa-file" style="color: #eca64c"></i>
           <span class="tooltiptext">Resume</span>
         </a>
       </nav>
