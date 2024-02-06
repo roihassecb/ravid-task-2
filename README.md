@@ -20,4 +20,4 @@ I've also used for the first time in an external JS library of icons that called
 
 ### Custom JS
 
-I've also used for the fitst time a custom function to show an hamburger menu on small screens instead of a navigation bar my function called **showHideNavToggle** and she add a custom class that hide the icons on small screen and display tham after click on hamburger button
+I've also used for the first time a custom function to show an hamburger menu on small screens instead of a navigation bar my function called **showHideNavToggle** and she add a custom class that hide the icons on small screen and display tham after click on hamburger button
